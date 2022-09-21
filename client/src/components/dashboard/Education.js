@@ -21,20 +21,20 @@ const Education = ({ education, deleteEducation }) => {
                     onClick={() => deleteEducation(edu._id)}
                     className='btn btn-danger'
                 >
-                    Delete
+                    Obriši
                 </button>
             </td>
         </tr>
     ));
     return (
         <Fragment>
-            <h2 className='my-2'>Education Credentials</h2>
+            <h2 className='my-2'>Obrazovanje</h2>
             <table className='table'>
                 <thead>
                     <tr>
-                        <th>School</th>
-                        <th className='hide-sm'>Degree</th>
-                        <th className='hide-sm'>Years</th>
+                        <th>Škola</th>
+                        <th className='hide-sm'>Diploma</th>
+                        <th className='hide-sm'>Godine</th>
                         <th />
                     </tr>
                 </thead>
