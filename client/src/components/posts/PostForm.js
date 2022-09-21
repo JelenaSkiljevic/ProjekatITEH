@@ -24,7 +24,7 @@ const PostForm = ({ addPost }) => {
                     cols='30'
                     rows='5'
                     value={text}
-                    placeholder='Create a post'
+                    placeholder='Kreirajte objavu'
                     required
                     onChange={(e) => setText(e.target.value)}
                 ></textarea>
