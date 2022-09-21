@@ -25,20 +25,20 @@ const Profile = ({
             ) : (
                 <Fragment>
                     <Link to='/profiles' className='btn btn-light'>
-                        Back to Profiles
+                        Nazad na profile
                     </Link>
                     {auth.isAuthenticated &&
                         auth.loading === false &&
                         auth.user._id === profile.user._id && (
                             <Link to='/edit-profile' className='btn btn-dark'>
-                                Edit Profile
+                                Uredi profil
                             </Link>
                         )}
                     <div className='profile-grid my-1'>
                         <ProfileTop profile={profile} />
                         <ProfileAbout profile={profile} />
                         <div className='profile-exp bg-white p-2'>
-                            <h2 className='text-primary'>Experience</h2>
+                            <h2 className='text-primary'>Iskustvo</h2>
                             {profile.experience.length > 0 ? (
                                 <Fragment>
                                     {profile.experience.map((experience) => (
@@ -49,11 +49,11 @@ const Profile = ({
                                     ))}
                                 </Fragment>
                             ) : (
-                                <h4>No experience credentials</h4>
+                                <h4>Nema podataka o iskustvu</h4>
                             )}
                         </div>
                         <div className='profile-edu bg-white p-2'>
-                            <h2 className='text-primary'>Education</h2>
+                            <h2 className='text-primary'>Obrazovanje</h2>
                             {profile.education.length > 0 ? (
                                 <Fragment>
                                     {profile.education.map((education) => (
@@ -64,7 +64,7 @@ const Profile = ({
                                     ))}
                                 </Fragment>
                             ) : (
-                                <h4>No education credentials</h4>
+                                <h4>Nema podataka o obrazovanju</h4>
                             )}
                         </div>
                         {profile.githubusername && (

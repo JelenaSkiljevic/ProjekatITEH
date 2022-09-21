@@ -52,7 +52,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <nav className='navbar bg-dark'>
             <h1>
                 <Link to='/'>
-                     ZaposliMe.rs
+                     DevMingler
                 </Link>
             </h1>
             {!loading && (

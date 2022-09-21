@@ -30,12 +30,11 @@ const AddEducation = ({ addEducation, history }) => {
 
     return (
         <Fragment>
-            <h1 className='large text-primary'>Add Your Education</h1>
+            <h1 className='large text-primary'>Dodaj Obrazovanje</h1>
             <p className='lead'>
-                <i className='fas fa-code-branch' /> Add any school, bootcamp,
-                etc that you have attended
+                <i className='fas fa-code-branch' /> Škola, Fakultet, drugi centri
             </p>
-            <small>* = required field</small>
+            <small>* = obavezna polja</small>
             <form
                 className='form'
                 onSubmit={(e) => {
@@ -46,7 +45,7 @@ const AddEducation = ({ addEducation, history }) => {
                 <div className='form-group'>
                     <input
                         type='text'
-                        placeholder='* School or Bootcamp'
+                        placeholder='* Škola, Fakultet, dr.'
                         name='school'
                         value={school}
                         onChange={onChange}
@@ -56,7 +55,7 @@ const AddEducation = ({ addEducation, history }) => {
                 <div className='form-group'>
                     <input
                         type='text'
-                        placeholder='* Degree or Certificate'
+                        placeholder='* Diploma, Sertifikat'
                         name='degree'
                         value={degree}
                         onChange={onChange}
@@ -66,14 +65,14 @@ const AddEducation = ({ addEducation, history }) => {
                 <div className='form-group'>
                     <input
                         type='text'
-                        placeholder='Field of Study'
+                        placeholder='* Oblast'
                         name='fieldofstudy'
                         value={fieldofstudy}
                         onChange={onChange}
                     />
                 </div>
                 <div className='form-group'>
-                    <h4>From Date</h4>
+                    <h4>Datum od:</h4>
                     <input
                         type='date'
                         name='from'
@@ -92,11 +91,11 @@ const AddEducation = ({ addEducation, history }) => {
                                 setFormData({ ...formData, current: !current });
                             }}
                         />{' '}
-                        Current School/Bootcamp
+                        trenutno
                     </p>
                 </div>
                 <div className='form-group'>
-                    <h4>To Date</h4>
+                    <h4>Datum do:</h4>
                     <input
                         type='date'
                         name='to'
@@ -110,14 +109,14 @@ const AddEducation = ({ addEducation, history }) => {
                         name='description'
                         cols='30'
                         rows='5'
-                        placeholder='Program Description'
+                        placeholder='Opis'
                         value={description}
                         onChange={onChange}
                     />
                 </div>
                 <input type='submit' className='btn btn-primary my-1' />
                 <Link className='btn btn-light my-1' to='/dashboard'>
-                    Go Back
+                    Nazad
                 </Link>
             </form>
         </Fragment>

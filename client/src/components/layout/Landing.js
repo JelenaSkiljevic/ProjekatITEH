@@ -11,7 +11,7 @@ const Landing = ({ isAuthenticated }) => {
         <section className='landing'>
             <div className='dark-overlay'>
                 <div className='landing-inner'>
-                    <h1 className='x-large'>ZaposliMe.rs</h1>
+                    <h1 className='x-large'>DevMingler Srbija</h1>
                     <p className='lead'>
                         Upoznaj nove kolege, pronadji idealan posao za sebe!
                     </p>
